@@ -41,6 +41,8 @@ dependencies {
     testCompile rootProject.ext.testLibraries.junit
     testCompile rootProject.ext.testLibraries.mockito
 
-    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.0'
-    androidTestCompile 'com.android.support.test:testing-support-lib:0.1'
+    androidTestCompile ('com.android.support.test.espresso:espresso-core:2.0') {
+        exclude group: 'com.squareup', module: 'javawriter'
+    }
+    androidTestCompile ('com.android.support.test:testing-support-lib:0.1')
 }
