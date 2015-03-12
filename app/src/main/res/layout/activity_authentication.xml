@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.philheenan.palletise.feature.account.authentication.AuthenticationActivity">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:layout_width="match_parent"/>
+
+    <com.philheenan.palletise.feature.account.authentication.login.LoginView
+        android:id="@+id/signinView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

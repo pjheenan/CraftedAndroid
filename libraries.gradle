@@ -1,0 +1,65 @@
+ext {
+
+    minSdkVersion = 15
+    compileSdkVersion = 21
+    buildToolsVersion = '21.1.2'
+
+    //Android
+    daggerVersion = '1.2.2'
+    butterknifeVersion = '6.1.0'
+    picassoVersion = '2.5.+'
+    appCompatVersion = '21.0.3'
+    androidSupportVersion = '21.0.3'
+    zxingVersion = '3.0.+'
+    // this version requires an update to support libraries which will break the app
+    playVersion = '6.5.+'
+    ottoVersion = '1.3.5'
+
+    //Java
+    rxjavaVersion = '1.0.8'
+    rxjavaAndroidVersion = '0.24.0'
+    retrofitVersion = '1.8.0'
+    javaxInjectVersion = '1'
+    gsonVersion = '2.3'
+    okhttpVersion = '2.1.0'
+    signpostVersion = '1.2.1.2'
+    commonsCodecVersion = '1.7'
+
+    //Testing
+    junitVersion = '4.11'
+    dexmakerVersion = '1.1'
+    mockitoVersion = '1.9.5'
+
+    libraries = [
+            androidSupport  : "com.android.support:support-v4:${androidSupportVersion}",
+            appCompat       : "com.android.support:appcompat-v7:${appCompatVersion}",
+            butterknife     : "com.jakewharton:butterknife:${butterknifeVersion}",
+            cardview        : "com.android.support:cardview-v7:${appCompatVersion}",
+            pallet          : "com.android.support:palette-v7${appCompatVersion}",
+            recycler        : "com.android.support:recyclerview-v7:${appCompatVersion}",
+            play            : "com.google.android.gms:play-services:${playVersion}",
+            picasso         : "com.squareup.picasso:picasso:${picassoVersion}",
+            zxing           : "com.google.zxing:core:${zxingVersion}",
+            dagger          : "com.squareup.dagger:dagger:${daggerVersion}",
+            daggerCompiler  : "com.squareup.dagger:dagger-compiler:${daggerVersion}",
+            rxjava          : "io.reactivex:rxjava:${rxjavaVersion}",
+            rxandroid       : "io.reactivex:rxandroid:${rxjavaAndroidVersion}",
+            retrofit        : "com.squareup.retrofit:retrofit:${retrofitVersion}",
+            javaxInject     : "javax.inject:javax.inject:${javaxInjectVersion}",
+            gson            : "com.google.code.gson:gson:${gsonVersion}",
+            okhttp          : "com.squareup.okhttp:okhttp:${okhttpVersion}",
+            okhttpurl       : "com.squareup.okhttp:okhttp-urlconnection:${okhttpVersion}",
+            signpost        : "oauth.signpost:signpost-core:${signpostVersion}",
+            signpostCommonsHttp    : "oauth.signpost:signpost-commonshttp4:${signpostVersion}",
+            commonsCodec    : "commons-codec:commons-codec:${commonsCodecVersion}",
+            otto            : "com.squareup:otto:${ottoVersion}",
+    ]
+
+    testLibraries = [
+            dexmaker       : "com.google.dexmaker:dexmaker:${dexmakerVersion}",
+            dexmakerMockito: "com.google.dexmaker:dexmaker-mockito:${dexmakerVersion}",
+            mockito        : "org.mockito:mockito-core:${mockitoVersion}",
+            junit          : "junit:junit:${junitVersion}"
+    ]
+
+}

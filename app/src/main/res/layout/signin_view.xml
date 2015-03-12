@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/formView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="64dp"
+            android:ems="10"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/ic_person_black_18dp"
+            android:drawableStart="@drawable/ic_person_black_18dp"
+            android:hint="@string/hint_username"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:drawablePadding="8dp"
+            android:hint="@string/hint_password"
+            android:drawableLeft="@drawable/ic_lock_black_18dp"
+            android:drawableStart="@drawable/ic_lock_black_18dp"/>
+
+        <TextView
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signin"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:layout_marginTop="64dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#D9727272"
+        android:visibility="gone">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+</FrameLayout>
