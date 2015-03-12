@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Palletise</string>
+    <string name="app_name">Crafted Android</string>
     <string name="title_activity_authentication">AuthenticationActivity</string>
 
     <string name="action_settings">Settings</string>
