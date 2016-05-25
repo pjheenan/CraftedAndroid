@@ -34,16 +34,17 @@ dependencies {
     compile project(':engine')
     compile project(':data')
     compile project(':engine')
-    compile rootProject.ext.libraries.appCompat
-    compile rootProject.ext.libraries.butterknife
-    compile rootProject.ext.libraries.rxandroid
+    compile (rootProject.ext.libraries.appCompat) {}
+    compile (rootProject.ext.libraries.butterknife) {}
+    compile (rootProject.ext.libraries.rxandroid) {}
 
-    testCompile rootProject.ext.testLibraries.junit
-    testCompile rootProject.ext.testLibraries.mockito
+    testCompile (rootProject.ext.testLibraries.junit) {}
+    testCompile (rootProject.ext.testLibraries.mockito) {}
 
-    androidTestCompile ('com.android.support.test.espresso:espresso-core:2.0') {
+    androidTestCompile (rootProject.ext.testLibraries.espresso) {
         exclude group: 'com.squareup', module: 'javawriter'
     }
-    androidTestCompile ('com.android.support.test.espresso:espresso-idling-resource:2.0')
-    androidTestCompile ('com.android.support.test:testing-support-lib:0.1')
+    androidTestCompile (rootProject.ext.testLibraries.espressoIdling) {}
+    androidTestCompile (rootProject.ext.testLibraries.testSupport) {}
+//    androidTestCompile (rootProject.ext.testLibraries.uiAutomator) {}
 }

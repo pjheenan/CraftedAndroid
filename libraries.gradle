@@ -1,15 +1,15 @@
 ext {
 
     minSdkVersion = 15
-    compileSdkVersion = 21
-    buildToolsVersion = '21.1.2'
+    compileSdkVersion = 22
+    buildToolsVersion = '22'
 
     //Android
     daggerVersion = '1.2.2'
     butterknifeVersion = '6.1.0'
     picassoVersion = '2.5.+'
-    appCompatVersion = '21.0.3'
-    androidSupportVersion = '21.0.3'
+    appCompatVersion = '22.0.0'
+    androidSupportVersion = '22.0.0'
     zxingVersion = '3.0.+'
     // this version requires an update to support libraries which will break the app
     playVersion = '6.5.+'
@@ -29,6 +29,9 @@ ext {
     junitVersion = '4.11'
     dexmakerVersion = '1.1'
     mockitoVersion = '1.9.5'
+    espressoVersion = '2.0'
+    testSupportVersion = '0.1'
+    uiAutomatorVersion = '2.0.0'
 
     libraries = [
             androidSupport  : "com.android.support:support-v4:${androidSupportVersion}",
@@ -56,10 +59,14 @@ ext {
     ]
 
     testLibraries = [
-            dexmaker       : "com.google.dexmaker:dexmaker:${dexmakerVersion}",
-            dexmakerMockito: "com.google.dexmaker:dexmaker-mockito:${dexmakerVersion}",
-            mockito        : "org.mockito:mockito-core:${mockitoVersion}",
-            junit          : "junit:junit:${junitVersion}"
+            dexmaker        : "com.google.dexmaker:dexmaker:${dexmakerVersion}",
+            dexmakerMockito : "com.google.dexmaker:dexmaker-mockito:${dexmakerVersion}",
+            mockito         : "org.mockito:mockito-core:${mockitoVersion}",
+            junit           : "junit:junit:${junitVersion}",
+            espresso        : "com.android.support.test.espresso:espresso-core:${espressoVersion}",
+            espressoIdling  : "com.android.support.test.espresso:espresso-idling-resource:${espressoVersion}",
+            testSupport     : "com.android.support.test:testing-support-lib:${testSupportVersion}",
+            uiAutomator     : "com.android.support.test.uiautomator:uiautomator-v18:${uiAutomatorVersion}"
     ]
 
 }

@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.philheenan.palletise.feature.account.authentication.AuthenticationActivity">
+    tools:context="com.philheenan.palletise.feature.account.authentication.AuthenticationActivity"
+    android:fitsSystemWindows="true">
 
     <include layout="@layout/toolbar"
         android:id="@+id/toolbar"

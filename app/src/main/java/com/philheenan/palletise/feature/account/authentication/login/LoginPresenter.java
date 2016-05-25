@@ -45,7 +45,7 @@ public class LoginPresenter {
         performLogin(viewModel.getUsername(), viewModel.getPassword());
     }
 
-    public void tokenResult(String token) {
+    void tokenResult(String token) {
         viewModel.success(token);
     }
 

@@ -13,6 +13,8 @@ import android.widget.TextView;
 
 import com.philheenan.palletise.R;
 
+import javax.inject.Inject;
+
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import butterknife.OnClick;
@@ -24,6 +26,9 @@ import rx.schedulers.Schedulers;
  * Created by phillip.heenan on 10/03/15.
  */
 public class LoginView extends LinearLayout implements LoginViewModel {
+
+//    @Inject
+//    LoginPresenter presenter;
 
     @InjectView(R.id.username)
     EditText username;
